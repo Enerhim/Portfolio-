@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+}
+
+main {
+    /* background: rgb(10,10,10);
+    background: -moz-linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(10,10,10,0) 20%, rgba(10,10,10,0) 80%, rgba(10,10,10,0.6) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(10,10,10,0) 20%, rgba(10,10,10,0) 80%, rgba(10,10,10,0.6) 100%);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(10,10,10,0) 20%, rgba(10,10,10,0) 80%, rgba(10,10,10,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a0a0a",endColorstr="#0a0a0a",GradientType=1); */
+    position: absolute;
+    width: 100%;
+    height: 525%;
+}
+
+/* Sections----------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+div.sections {
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+h1 {
+    color: white;
+    font-size: 85px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Roboto Light';
+    color: white;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: square;
+    color: white;
+}
+
+ul.contact {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+ul.contact li {
+    margin-right: 20px;
+}
+
+ul.contact li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+ul.prefs li {
+    font-size: 25px;
+}
+
+section.welcome {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    background-color: rgba(23, 23, 23, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+section.about {
+    grid-column: 2 / 5;
+    grid-row: 5 / 8;
+    background-color: rgba(23, 23, 23, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+/* Skills ------------- */
+
+section.skills {
+    grid-column: 3 / 5;
+    grid-row: 9 / 13 ;
+    background-color: rgba(23, 23, 23, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+section.languages {
+    grid-column: 2 / 4;
+    grid-row: 14 / 21 ;
+    background-color: rgba(23, 23, 23, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+}
+
+.progress-value-1 {
+    animation: load1 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(255, 63, 63);
+    height: 30px;
+    width: 0;
+}
+.progress-value-2 {
+    animation: load2 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(255, 100, 38);
+    height: 30px;
+    width: 0;
+}
+.progress-value-3 {
+    animation: load3 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(255, 153, 69);
+    height: 30px;
+    width: 0;
+}
+.progress-value-4 {
+    animation: load4 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(255, 173, 50);
+    height: 30px;
+    width: 0;
+}
+.progress-value-5 {
+    animation: load5 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(255, 215, 39);
+    height: 30px;
+    width: 0;
+}
+.progress-value-6 {
+    animation: load6 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(255, 236, 67);
+    height: 30px;
+    width: 0;
+}
+.progress-value-7 {
+    animation: load7 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(220, 255, 64);
+    height: 30px;
+    width: 0;
+}
+.progress-value-8 {
+    animation: load8 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(198, 255, 66);
+    height: 30px;
+    width: 0;
+}
+.progress-value-9 {
+    animation: load9 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(147, 255, 75);
+    height: 30px;
+    width: 0;
+}
+.progress-value-10 {
+    animation: load10 3s normal forwards;
+    border-radius: 100px;
+    background: rgb(91, 255, 69);
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load1 {
+    0% { width: 0; }
+    100% { width: 10%; }
+}
+@keyframes load2 {
+    0% { width: 0; }
+    100% { width: 20%; }
+}
+@keyframes load3 {
+    0% { width: 0; }
+    100% { width: 30%; }
+}
+@keyframes load4 {
+    0% { width: 0; }
+    100% { width: 40%; }
+}
+@keyframes load5 {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+@keyframes load6 {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+@keyframes load7 {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+@keyframes load8 {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+@keyframes load9 {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+@keyframes load10 {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+/* Programming Languages */
